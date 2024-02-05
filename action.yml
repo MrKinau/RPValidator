@@ -12,7 +12,7 @@ inputs:
     default: 'config.json'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'mrkinau/rpvalidator:master'
   args:
     - '-rp'
     - '${{ inputs.resourcepack}}'
