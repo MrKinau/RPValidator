@@ -14,4 +14,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - '-rp ${{ inputs.resourcepack}} -config ${{ inputs.config }}'
+    - '-rp'
+    - '${{ inputs.resourcepack}}'
+    - '-config'
+    - '${{ inputs.config }}'
